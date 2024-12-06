@@ -10,7 +10,8 @@ class StuberatorServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package) : void
     {
-        $package->name('stuberator')
+        $package
+            ->name('stuberator')
             ->publishesServiceProvider('StuberatorServiceProvider')
             ->hasCommand(MakeAction::class);
     }
