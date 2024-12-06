@@ -15,6 +15,12 @@ class StuberatorServiceProvider extends PackageServiceProvider
                 \Record\Stuberator\Console\Commands\MakeAction::class,
                 \Record\Stuberator\Console\Commands\MakeService::class,
                 \Record\Stuberator\Console\Commands\MakeEnum::class
-            ]);
+            ])
+            ->hasInstallCommand(function(InstallCommand $command) {
+                $command
+                    ->copyAndRegisterServiceProviderInApp();
+            });;
+
+
     }
 }
