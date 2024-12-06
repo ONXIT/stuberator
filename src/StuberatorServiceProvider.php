@@ -12,7 +12,10 @@ class StuberatorServiceProvider extends PackageServiceProvider
         $package
             ->name('stuberator')
             ->publishesServiceProvider('StuberatorServiceProvider')
-            ->hasCommand(                \Record\Stuberator\Console\Commands\MakeAction::class,
-            );
+            ->hasConsoleCommands([
+                \Record\Stuberator\Console\Commands\MakeAction::class,
+                \Record\Stuberator\Console\Commands\MakeService::class,
+                \Record\Stuberator\Console\Commands\MakeEnum::class
+            ]);
     }
 }
