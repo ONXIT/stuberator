@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Record\Stuberator\Console\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 

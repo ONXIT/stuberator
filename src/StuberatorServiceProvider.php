@@ -1,4 +1,5 @@
 <?php
+namespace Record\Stuberator;
 
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Spatie\LaravelPackageTools\Package;
@@ -9,9 +10,9 @@ class StuberatorServiceProvider extends PackageServiceProvider
     {
         $package->name('stuberator')
             ->hasCommands([
-                \App\Console\Commands\MakeAction::class,
-                \App\Console\Commands\MakeService::class,
-                \App\Console\Commands\MakeEnum::class
+                \Record\Stuberator\Console\Commands\MakeAction::class,
+                \Record\Stuberator\Console\Commands\MakeService::class,
+                \Record\Stuberator\Console\Commands\MakeEnum::class
             ]);
     }
 }
