@@ -1,0 +1,13 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ class }}
+{
+    public function __construct()
+    {
+        // Inject dependencies here
+    }
+
+    // Add service methods here
+}

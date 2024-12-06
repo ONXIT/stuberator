@@ -1,0 +1,10 @@
+<?php
+
+namespace {{ namespace }};
+
+enum {{ class }}: string
+{
+    use BaseEnum;
+
+    case ExampleValue = 'example_value';
+}

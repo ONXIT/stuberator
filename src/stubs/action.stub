@@ -1,0 +1,13 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Actions\ActionInterface;
+
+class {{ class }} implements ActionInterface
+{
+    public function execute(...$params)
+    {
+        // Implement action logic here
+    }
+}
