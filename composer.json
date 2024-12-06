@@ -3,7 +3,7 @@
   "description": "Generate a few types of architectures elements by Command Generators and stubs",
   "type": "library",
   "license": "MIT",
-  "version": "dev-stable",
+  "version": "1.0",
   "autoload": {
     "psr-4": {
       "Record\\Stuberator\\": "src/"
@@ -24,5 +24,5 @@
     "illuminate/routing": "^10.0|^11.0",
     "spatie/laravel-package-tools": "^1.16"
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "stable"
 }
