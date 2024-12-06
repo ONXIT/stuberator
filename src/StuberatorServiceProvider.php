@@ -9,6 +9,7 @@ class StuberatorServiceProvider extends PackageServiceProvider
     public function configurePackage(Package $package) : void
     {
         $package->name('stuberator')
+            ->publishesServiceProvider('StuberatorServiceProvider')
             ->hasCommands([
                 \Record\Stuberator\Console\Commands\MakeAction::class,
                 \Record\Stuberator\Console\Commands\MakeService::class,
