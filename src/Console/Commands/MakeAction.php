@@ -13,7 +13,7 @@ class MakeAction extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__ . '/../stubs/action.stub'; // Dopasuj ścieżkę do stubów w paczce
+        return __DIR__ . '/../../stubs/action.stub';
     }
 
     protected function getDefaultNamespace($rootNamespace)

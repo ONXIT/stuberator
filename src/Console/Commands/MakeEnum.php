@@ -12,7 +12,7 @@ class MakeEnum extends GeneratorCommand
 
     protected function getStub()
     {
-        return base_path('stubs/enum.stub');
+        return __DIR__ . '/../../stubs/enum.stub';
     }
 
     protected function getDefaultNamespace($rootNamespace)
