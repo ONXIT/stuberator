@@ -2,6 +2,8 @@
 
 namespace {{ namespace }};
 
+use Record\Stuberator\Enums\BaseEnum
+
 enum {{ class }}: string
 {
     use BaseEnum;

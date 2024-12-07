@@ -2,7 +2,7 @@
 
 namespace {{ namespace }};
 
-use App\Actions\ActionInterface;
+use Record\Stuberator\Contracts\ActionInterface;
 
 class {{ class }} implements ActionInterface
 {
